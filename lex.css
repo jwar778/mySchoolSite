@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caveat+Brush&family=Caveat:wght@600&family=Dancing+Script:wght@700&family=Fuggles&family=Pinyon+Script&display=swap');
+
+@media screen and (min-width: 1024px) {
+
+    /* For Desktop Viewing */
+    
+    * {
+        box-sizing: border-box;
+        display: 0;
+        padding: o;
+    }
+}
+
+/* nav and button content code */
+.wrapper {
+    display: flex;
+    background-color: transparent;
+    justify-content: right;
+    align-items: center;
+    min-height: 3vh;
+    width: 820px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+a {
+    font-family: 'Dancing Script', cursive;
+    background-color: transparent;
+    position: relative;
+    display: grid;
+    padding: 10px 10px;
+    letter-spacing: 4px;
+    color: #03e9f4;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: .5s;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+a:hover {
+    background-color: #03e9f4;
+    color: darkblue;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}
+
+a:first-child {
+    filter: hue-rotate(225deg);
+}
+
+a:last-child {
+    filter: hue-rotate(90deg);
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s infinite;
+    animation-delay: .25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1s infinite;
+    animation-delay: .5s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s infinite;
+    animation-delay: .75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* lex.html Styles */
+
+h1 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 100px;
+    color: orange;
+    text-shadow: 1px 3px black;
+    text-align: center;
+}
+
+.quote {
+    display: flex;
+    font-family: 'Dancing Script', cursive, bold;
+    min-width: 200px;
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 10px double gold;
+    padding: 10px;
+    font-size: 25px;
+    color: darkorange;
+    text-shadow: 1px 1px black;
+}
+
+.quote span {
+    color: orangered;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Fuggles', cursive;
+    font-size: 65px;
+    text-align: center;
+    color: goldenrod;
+    text-shadow: 1px 1px black;
+}
+
+.main-with-sidebar > :first-child {
+    position: relative;
+    flex-basis: 500px;
+    flex-grow: 999;
+}
+
+.main-with-sidebar > :last-child {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#lex-sec {
+    gap: 1em;
+}
+
+#lex-main {
+    border-bottom: 5px solid gold;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 35px;
+    font-weight: bolder;
+    color: orangered;
+    text-shadow: 1px 2px black;
+    text-align: center;
+    margin-left: 15%;
+    max-width: 75%;
+    align-items: start;
+    padding: 1rem;
+}
+
+#lex-ass {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px red;
+    text-justify: auto;
+    gap: 1em;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lex-ass li {
+    list-style: none;
+}
+
+#lex-ass li b {
+    font-family: 'Caveat';
+    font-size: 1.3em;
+    color: rgb(243, 164, 61);
+}
+
+#lex-foot {
+    font-family: 'Black Ops One';
+    color: red;
+    text-shadow: 1.5px 1px black;
+    text-align: center;
+}
+
+/* Media Query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .quote {
+        max-width: 50%;
+        margin-left: 0;
+    }
+
+    #lex-sec, #lex-main, #lex-ass {
+        padding: 0.5rem;
+    }
+}

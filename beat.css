@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caveat+Brush&family=Caveat:wght@600&family=Dancing+Script:wght@700&family=Fuggles&family=Pinyon+Script&display=swap');
+
+@media screen and (min-width: 1024px) {
+
+    /* For Desktop Viewing */
+    
+    * {
+        box-sizing: border-box;
+        display: 0;
+        padding: o;
+    }
+}
+
+/* nav and button content code */
+.wrapper {
+    display: flex;
+    background-color: transparent;
+    justify-content: right;
+    align-items: center;
+    min-height: 3vh;
+    width: 820px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+a {
+    font-family: 'Dancing Script', cursive;
+    background-color: transparent;
+    position: relative;
+    display: grid;
+    padding: 10px 10px;
+    letter-spacing: 4px;
+    color: #03e9f4;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: .5s;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+a:hover {
+    background-color: #03e9f4;
+    color: darkblue;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}
+
+a:first-child {
+    filter: hue-rotate(225deg);
+}
+
+a:last-child {
+    filter: hue-rotate(90deg);
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s infinite;
+    animation-delay: .25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1s infinite;
+    animation-delay: .5s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s infinite;
+    animation-delay: .75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* beat.html Styles */
+html {
+    background-image: url(images/Kentucky-Pine-Mountain-Trail.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Fuggles', cursive;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+    color: orangered;
+    text-shadow: 1px 1px white;
+}
+
+#beat-art p {
+    display: grid;
+    gap: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 38px;
+    font-weight: bolder;
+    text-align: center;
+    width: 80%;
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px lightslategray;
+}
+
+#woody {
+    display: flex;
+    border: 15px ridge gold;
+    border-radius: 100%;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+}
+
+div.quote {
+    display: flex;
+    font-family: 'Dancing Script', fantasy;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px green;
+    min-width: 20%;
+    max-width: 60%;
+    border: 10px double gold;
+    border-radius: 20px;
+}
+
+div.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1.5rem;
+    background-color: black;
+    font-family: 'Black Ops One';
+    font-weight: bold;
+    font-size: 25px;
+    margin: 25px auto 10px auto;
+    border: 1px solid white;
+    float: center;
+    width: auto;
+}
+
+#gall01 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px white;
+    color: red;
+    margin-bottom: 20px;
+}
+
+div.gallery img {
+    width: 80%;
+    height: auto;
+};
+
+div.desc {
+    width: 80%;
+    padding: 25px;
+    border: 2px solid gold;
+    text-align: center;
+}
+
+#beatFoot {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    color: rgb(229, 229, 34);
+    text-shadow: 1px 1px black;
+    text-align: left;
+}
