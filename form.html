@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
+        <link href="css/form.css" rel="stylesheet">
+        <title>KY Web Site</title>
+        <script>
+            function validateEmails() {
+                var email = document.getElementById('email').value;
+                var confirmEmail = document.getElementById('confirmEmail').value;
+    
+                if (email !== confirmEmail) {
+                    alert('Emails do not match. Please make sure the email fields match.');
+                    return false;
+                } else {
+                    alert('Emails are a match. Thank you!')
+                }
+    
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <a href="index.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Home
+            </a>
+            <a href="cap.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Frankfort
+            </a>
+            <a href="lex.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Lexington
+            </a>
+            <a href="beat.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Beattyville
+            </a>
+            <a href="parks.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Parks
+            </a>
+            <a href="form.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Form
+            </a>
+        </div>
+        <form name="form" id="form" onsubmit="return validateEmails();">
+            <h1>Website Rating Form</h1><br><br>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+    
+            <label for="langs">What language do you study?</label><br>
+    
+            <label for="html">HTML</label>
+            <input type="radio" id="html" name="lang" value="HTML"><br>
+            
+            <label for="css">CSS</label>
+            <input type="radio" id="css" name="lang" value="CSS"><br>
+            
+            <label for="js">JavaScript</label>
+            <input type="radio" id="js" name="lang" value="JavaScript"><br>
+            
+            <label for="python">Python</label>
+            <input type="radio" id="python" name="lang" value="Python"><br>
+            
+            <label for="C++">C++</label>
+            <input type="radio" id="C++" name="lang" value="C++"><br>
+            
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="lang" value="Other"><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="confirmEmail">Confirm Email:</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" required><br><br>
+    
+            <label for="question1">What did you like?</label>
+            <textarea id="question1" name="question1" rows="4" cols="50"></textarea><br><br>
+    
+            <label for="question2">What did you dislike?</label>
+            <textarea id="question2" name="question2" rows="4" cols="50"></textarea><br><br>
+    
+            <label for="question3">What could be improved?</label>
+            <textarea id="question3" name="question3" rows="4" cols="50"></textarea><br><br>
+    
+            <input type="submit" id="submit" value="Submit"><br><br>
+        </form>
+    </body>
+</html>
