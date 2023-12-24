@@ -1,57 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caveat+Brush&family=Caveat:wght@600&family=Dancing+Script:wght@700&family=Fuggles&family=Pinyon+Script&display=swap');
 
+/* nav and button content code */
+.wrapper {
+    display: flex;
+    background-color: transparent;
+    justify-content: right;
+    align-items: center;
+    min-height: 3vh;
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
 
-/* Styling the Form */
+a {
+    font-family: 'Dancing Script', cursive;
+    background-color: transparent;
+    position: relative;
+    display: grid;
+    padding: 10px 10px;
+    letter-spacing: 4px;
+    color: #03e9f4;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: .5s;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+a:hover {
+    background-color: #03e9f4;
+    color: darkblue;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}
+
+a:first-child {
+    filter: hue-rotate(225deg);
+}
+
+a:last-child {
+    filter: hue-rotate(90deg);
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s infinite;
+    animation-delay: .25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1s infinite;
+    animation-delay: .5s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s infinite;
+    animation-delay: .75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    100% {
+        bottom: 100%;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+
+h1 {
+    font-display: inline;
+    font-family: 'Fuggles', cursive;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(90deg, white, lightblue, blue, white, white, blue, lightblue, white);
+    color: orangered;
+    text-shadow: 2px 1px goldenrod;
+    border: 10px double gold;
+    border-radius: 100%;
+    width: fit-content;
+    margin: 5px auto 5px auto;
+}
 
 form {
-	background-color: #fff;
-	max-width: 500px;
-	margin: 50px auto;
-	padding: 30px 20px;
-	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Styling Form-Control Class */
-
-.form-control {
-	text-align: left;
-	margin-bottom: 25px;
-}
-
-/* Styling Form-Control Label */
-
-.form-control label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-/* Styling Form-Control Input */
-.form-control input,
-.form-control select,
-.form-control textarea {
-    border: 1px solid #777;
-    border-radius: 2px;
-    font-family: inherit;
-    padding: 10px;
-    display: block;
-    width: 95%;
-}
-
-/* Styling Form-Control Radio Button and Checkbox */
-.form-control input[type="radio"],
-.form-control input[type="checkbox"] {
-    display: inline-block;
-    width: auto;
-}
-
-/* Styling Button */
-#form-butt {
-    background-color: #05c46b;
-    border: 1px solid #777;
-    border-radius: 2px;
-    font-family: inherit;
-    font-size: 21px;
-    display: block;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    width: 25%;
+    height: fit-content;
+    margin: auto;
+    border: 3px solid gold;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: lightyellow;
 }
